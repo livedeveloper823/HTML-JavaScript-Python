@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Reporte "Cuota laboral por entidad"</title>
+		<link rel="stylesheet" type="text/css" href="../css/report.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/repGenSystemLog.js"></script>
+	</head>
+
+	<body>
+		<div class="title">Reporte "Aceso al Sistema"</div>
+		<div class="meta">
+			<table class="table-meta">
+				<tr><th>Fecha de generación:</th><td style="widht:100%" id="td-when"></td></tr>
+				<tr><th>Creador:</th><td id="td-who"></td></tr>
+				<tr><th>Plazo:</th><td>del <span id="s-since"></span> al <span id="s-until"></span></td></tr>
+			</table>
+		</div>
+		<h2>Bitácora</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Fecha y hora</th><th>Usuario</th><th>Nombre</th><th>Mensaje</th></tr>
+			</thead>
+			<tbody id="theBody">
+			</tbody>
+		</table>
+		<h2>Usuarios</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Usuario</th><th>Nombre</th><th>Estado</th><th>Rol</th></tr>
+			</thead>
+			<tbody id="theBody2">
+			</tbody>
+		</table>
+	</body>
+
+</html>

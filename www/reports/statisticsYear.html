@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Reporte "Cuota laboral por año"</title>
+		<link rel="stylesheet" type="text/css" href="../css/report.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/repGenStatisticsYear.js"></script>
+	</head>
+
+	<body>
+		<div class="title">Estadísticas anuales</div>
+		<div class="meta">
+			<table class="table-meta">
+				<tr><th>Fecha de generación:</th><td style="widht:100%" id="td-when"></td></tr>
+				<tr><th>Creador:</th><td id="td-who"></td></tr>
+				<tr><th>Año:</th><td id="td-year"></td></tr>
+			</table>
+		</div>
+		<table class="table-4">
+			<tr>
+				<td class="td-4-left">
+					<div class="td-4-title">Planillas</div>
+					<div class="td-4-graph">
+						<table class="table-bars">
+							<tr>
+								<td>cargadas&nbsp;</td>
+								<td width="99%">
+									<div class="redbar" style="width:100%" id="bar-uploaded">
+										&nbsp;<span id="s-uploaded"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>pagadas&nbsp;</td>
+								<td>
+									<div class="bluebar" style="width:50%" id="bar-payed">
+										&nbsp;<span id="s-payed"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td class="td-4-right">
+					<div class="td-4-title">Recaudación</div>
+					<div class="td-4-graph">
+						<table class="table-bars">
+							<tr>
+								<td>laboral&nbsp;</td>
+								<td width="99%">
+									<div class="redbar" style="width:100%" id="bar-workerFee">
+										&nbsp;Q <span id="s-workerFee"></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>patronal&nbsp;</td>
+								<td>
+									<div class="bluebar" style="width:50%" id="bar-patronFee">
+										&nbsp;Q <span id="s-patronFee"></span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<h2>Entidades con convenios de pago</h2>
+
+		<table class="table-display">
+			<thead>
+				<tr><th>Entidad municipal</th><th>Código</th><th>Convenios de pago</th></tr>
+			</thead>
+			<tbody id="agreementsBody">
+			</tbody>
+		</table>
+
+		<h2>Entidades que están al día (<span id="s-cut"></span>) con la cuota laboral</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Entidad municipal</th><th>Código</th></tr>
+			</thead>
+			<tbody id="workerOnTimeBody">
+			</tbody>
+		</table>
+
+		<h2>Entidades morosas (<span id="s-cut2"></span>) con la cuota laboral</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Entidad municipal</th><th>Código</th></tr>
+			</thead>
+			<tbody id="workerNotOnTimeBody">
+			</tbody>
+		</table>
+
+		<h2>Entidades que están al día (<span id="s-cut3"></span>) con la cuota patronal</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Entidad municipal</th><th>Código</th></tr>
+			</thead>
+			<tbody id="patronOnTimeBody">
+			</tbody>
+		</table>
+
+		<h2>Entidades morosas (<span id="s-cut4"></span>) con la cuota patronal</h2>
+		<table class="table-display">
+			<thead>
+				<tr><th>Entidad municipal</th><th>Código</th></tr>
+			</thead>
+			<tbody id="patronNotOnTimeBody">
+			</tbody>
+		</table>
+
+	</body>
+
+</html>

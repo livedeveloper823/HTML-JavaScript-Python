@@ -1,0 +1,335 @@
+body
+{
+	font-size: 12pt;
+	font-family: sans-serif;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/background.png');
+	background-repeat: repeat-x repeat-y;
+}
+
+.canvas
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.canvas-white
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+	border-top: 80px solid white;
+	border-bottom: 80px solid white;
+	border-left: 20px solid white;
+	border-right: 20px solid white;
+}
+
+.footer
+{
+	background-color: #0076b8;
+	color: white;
+	height: 235px;
+	vertical-align: middle;
+	padding-top: 80px;
+	font-size: 11pt;
+	line-height: 1.5;
+	text-align: right;
+}
+
+.footer2
+{
+	background-color: #1a84bf;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	color: white;
+	font-size: 10pt;
+
+}
+
+.footer2-left
+{
+	line-height: 90px;
+	float: left;
+}
+
+.footer2-right
+{
+	color: white;
+	font-size: 10pt;
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.menu
+{
+	width: 100%;
+	min-height: 36px;
+	background-color: #003d58;
+	color: white;
+	line-height: 36px;
+	font-size: 11pt;
+	overflow: hidden;
+}
+
+.menu-item
+{
+	float: left;
+	padding: 0px 40px;
+	cursor: pointer;
+	border-bottom: 3px solid #003d58;
+}
+
+.menu-item:hover
+{
+	border-bottom: 3px solid white !important;
+}
+
+.header
+{
+	width: 100%;
+	height: 36px;
+	background-color: #007ab9;
+	color: white;
+	line-height: 36px;
+	font-size: 11pt;
+}
+
+.header-right
+{
+	float: right;
+	text-align: right;
+}
+
+.header-left
+{
+	float: left;
+}
+
+.logo
+{
+	float: left;
+	margin-right: 20px;
+}
+
+.nav
+{
+	height: 150px;
+	background-color: #007eb9;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 14pt;
+	overflow: hidden;
+}
+
+.nav-inactive
+{
+	color: #4d94e2;
+}
+
+.nav-item-left
+{
+	float: left;
+	padding: 0px 40px;
+	cursor: pointer;
+}
+
+.nav-item-right
+{
+	float: right;
+	padding: 0px 40px;
+	cursor: pointer;
+}
+
+
+.content
+{
+	width: 100%;
+	padding: 1em;
+}
+
+.centered
+{
+	text-align: center;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.center-div
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.spacer80
+{
+	height: 80px;
+}
+
+.div-login
+{
+	color: white;
+	border: 2px solid #0076b8;
+	border-radius: 1em;
+	display: table;
+	margin: auto;
+	padding: 1em;
+	background-image: url('../img/background-dark.png');
+	background-repeat: repeat;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.login-table
+{
+	margin: auto;
+}
+
+.login-table td
+{
+	padding: 0.5em;
+}
+
+.login-table th
+{
+	text-align: left;
+}
+
+.button-login
+{
+	padding: 4pt 8pt;
+	border-radius: 4pt;
+	border: 1px solid #007eb0;
+	color: #007ab9;
+	background-color: white;
+	margin-left: .5em;
+	margin-right: .5em;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+input
+{
+	padding: .2em .4em;
+	font-size: 12pt;
+	font-family: sans-serif;
+}
+
+select
+{
+	padding: .2em .4em;
+	font-size: 12pt;
+	font-family: sans-serif;
+}
+
+textarea
+{
+	padding: .2em .4em;
+	font-size: 12pt;
+	font-family: sans-serif;
+}
+
+.button
+{
+	padding: 4pt 8pt;
+	border-radius: 4pt;
+	border: 1px solid #007eb0;
+	background-color: #007ab9;
+	color: white;
+	margin-left: .5em;
+	margin-right: .5em;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+.table-dfm-roster
+{
+	border-collapse: collapse;
+}
+
+.table-dfm-roster td
+{
+	padding: .5em 1em;
+	border: 1px solid black;
+}
+
+.table-dfm-roster th
+{
+	padding: .5em 1em;
+	border: 1px solid black;
+}
+
+.table-display th
+{
+	padding: .5em 1em;
+	text-align: left;	
+	vertical-align: top;
+}
+
+
+.table-pagination
+{
+	border-collapse: collapse;
+}
+
+.table-pagination td
+{
+	padding: .5em 1em;
+	border: 1px solid black;
+}
+
+.table-pagination th
+{
+	padding: .5em 1em;
+	border: 1px solid black;
+}
+
+.div-top
+{
+	margin-top: 80px;
+	margin-bottom: 2em;
+}
+
+.div-filter
+{
+	margin-bottom: 2em;
+	padding: 1em;
+	border: 2px solid #0076b8;
+	border-radius: 1em;
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.full-width
+{
+	width: 100%;
+}
+
+.title
+{
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.error
+{
+	color: red;
+}
+
+.img-loader
+{
+	width: 60px;
+	height: 60px;
+}

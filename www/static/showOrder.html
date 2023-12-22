@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Planilla Electrónica En Línea</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/showOrder.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="canvas">
+				<div class="header-left">SISTEMA DE PLANILLAS ELECTRÓNICAS</div>
+				<div class="header-right">PPEM &minus; <span id="login-name"></span></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="canvas">
+				<img class="logo" src="../img/logo.png"/>
+				<div class="nav-item-left">Menú</div>
+				<div class="nav-item-left nav-inactive">Órdenes</div>
+				<div class="nav-item-right" onclick="location.href='logout.html';">Cerrar sesión</div>
+				<div class="nav-item-right" onclick="location.href='http://ppem.gob.gt';">Sitio principal</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="canvas" id="menu-canvas">
+			</div>
+		</div>
+		<div class="canvas-white">
+			<p><table class="table-display">
+				<tr><th>Número:</th><td id="td-number"></td></tr>
+				<tr><th>Emitida:</th><td id="td-issued"/></td></tr>
+				<tr><th>Vence:</th><td id="td-expires"/></td></tr>
+				<tr><th>Entidad:</th><td id="td-entity"/></td></tr>
+				<tr><th>Cuota:</th><td id="td-fee"/></td></tr>
+				<tr><th>Mes y año:</th><td id="td-monthyear"/></td></tr>
+				<tr><th>Planilla:</th><td id="td-roster"></td></tr>
+				<tr><th>Monto:</th><td id="td-amount"/></td></tr>
+				<tr><th>Estado Banrural:</th><td id="td-banrural"/></td></tr>
+				<tr><th>Estado:</th><td id="td-status"/></td></tr>
+				<tr><th>Recibo:</th><td id="td-receipt"/></td></tr>
+			</table></p>
+			<hr>
+			<div>
+				<p><span class="button" id="btn-reject">Rechazar pago</span> <span class="button" id="btn-accept">Aceptar pago</span></p>
+			</div>
+			<hr>
+			<div>
+				<p><span class="button" id="btn-back">Volver a órdenes</span></p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="canvas">
+					3ra. Calle 5-26 Zona 1, Guatemala<br><br>
+					PBX: (502) 2291-1700 <br>
+					FAX: (502) 2291-1797 <br><br>
+					informacion@ppem.gob.gt
+			</div>
+		</div>
+		<div class="footer2">
+			PPEM © 2018
+		</div>
+	</body>
+
+</html>

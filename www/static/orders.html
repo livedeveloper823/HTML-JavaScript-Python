@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Planilla Electrónica En Línea</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/orders.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="canvas">
+				<div class="header-left">SISTEMA DE PLANILLAS ELECTRÓNICAS</div>
+				<div class="header-right">PPEM &minus; <span id="login-name"></span></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="canvas">
+				<img class="logo" src="../img/logo.png"/>
+				<div class="nav-item-left">Menú</div>
+				<div class="nav-item-left nav-inactive">Órdenes</div>
+				<div class="nav-item-right" onclick="location.href='logout.html';">Cerrar sesión</div>
+				<div class="nav-item-right" onclick="location.href='http://ppem.gob.gt';">Sitio principal</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="canvas" id="menu-canvas">
+			</div>
+		</div>
+		<div class="canvas-white">
+			<div class="div-filter">
+				Filtros <span class="button" id="btn-toggle-filter">&lt;</span>
+				<div id="filter-hider">
+					<p><table class="table-display">
+						<tr><th>Número:</th><td><input id="inp-uid" type="text"/></td></tr>
+						<tr><th>Estado:</th><td><select id="sel-status">
+							<option value="0">todos</option>
+							<option value="1">vigente</option>
+							<option value="2">vencida</option>
+							<option value="3">anulada</option>
+							<option value="4">no publicada</option>
+							<option value="5">publicada</option>
+							<option value="6">pagada</option>
+							<option value="7">revertida</option>
+							<option value="8">pendiente de revisión</option>
+							<option value="9">aceptada</option>
+							<option value="10">rechazada</option>
+						</select></td></tr>
+						<tr><th>Departamento:</th><td><select id="sel-department"><option value="0">no aplica</option></select></td></tr>
+						<tr><th>Municipio:</th><td><select id="sel-municipality"><option value="0">no aplica</option></select></td></tr>
+						<tr><th>Entidad:</th><td><select id="sel-entity"><option value="0">no aplica</option></select></td></tr>
+					</table></p>
+					<p><span class="button" id="btn-filter">Consultar</span><span class="button" id="btn-reset-filter">Revertir</span></p>
+				</div>
+			</div>
+			<p class="centered">
+				<span id="btn-page-prev2" class="button">&lt;</span> <span id="page-text2">desplegando registros 0 a 0 de 0</span> <span class="button" id="btn-page-next2">&gt;</span>
+			</p>
+			<p>
+				<table class="table-pagination full-width">
+					<thead>
+						<tr><th>Número</th><th>Cuota</th><th>Mes y año</th><th>Entidad</th><th>Estado</th><th>Estado Banrural</th><th></th></tr>
+					</thead>
+					<tbody id="page-tbody">
+					</tbody>
+				</table>
+			</p>
+			<p class="centered">
+				<span id="btn-page-prev" class="button">&lt;</span> <span id="page-text">desplegando registros 0 a 0 de 0</span> <span class="button" id="btn-page-next">&gt;</span>
+			</p>
+			<hr>
+			<p><span class="button" id="btn-export-csv">Exportar CSV</span><span class="button" id="btn-export-pdf">Exportar PDF</span></p>
+		</div>
+		<div class="footer">
+			<div class="canvas">
+					3ra. Calle 5-26 Zona 1, Guatemala<br><br>
+					PBX: (502) 2291-1700 <br>
+					FAX: (502) 2291-1797 <br><br>
+					informacion@ppem.gob.gt
+			</div>
+		</div>
+		<div class="footer2">
+			PPEM © 2018
+		</div>
+	</body>
+
+</html>

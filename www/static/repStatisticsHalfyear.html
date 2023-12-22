@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Planilla Electrónica En Línea</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/repStatisticsHalfyear.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="canvas">
+				<div class="header-left">SISTEMA DE PLANILLAS ELECTRÓNICAS</div>
+				<div class="header-right">PPEM &minus; <span id="login-name"></span></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="canvas">
+				<img class="logo" src="../img/logo.png"/>
+				<div class="nav-item-left">Menú</div>
+				<div class="nav-item-left nav-inactive">Reportes</div>
+				<div class="nav-item-right" onclick="location.href='logout.html';">Cerrar sesión</div>
+				<div class="nav-item-right" onclick="location.href='http://ppem.gob.gt';">Sitio principal</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="canvas" id="menu-canvas">
+			</div>
+		</div>
+		<div class="canvas-white">
+			<h2>Estadísticas semestrales</h2>
+			<p><table class="table-display">
+						<tr><th>Año:</th><td><input id="inp-year" type="text"/></td></tr>
+						<tr><th>Semestre:</th><td><select id="sel-half" type="text"/>
+							<option value="1">primero</option>
+							<option value="2">segundo</option>
+						</select></td></tr>
+			</table></p>
+			<p id="p-error"></p>
+			<hr>
+			<p><span class="button" id="btn-show">Desplegar</span><span class="button" id="btn-pdf">PDF</span></p>
+		</div>
+		<div class="footer">
+			<div class="canvas">
+					3ra. Calle 5-26 Zona 1, Guatemala<br><br>
+					PBX: (502) 2291-1700 <br>
+					FAX: (502) 2291-1797 <br><br>
+					informacion@ppem.gob.gt
+			</div>
+		</div>
+		<div class="footer2">
+			PPEM © 2018
+		</div>
+	</body>
+
+</html>

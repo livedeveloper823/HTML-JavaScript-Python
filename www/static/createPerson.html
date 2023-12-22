@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Planilla Electrónica En Línea</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/createPerson.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="canvas">
+				<div class="header-left">SISTEMA DE PLANILLAS ELECTRÓNICAS</div>
+				<div class="header-right">PPEM &minus; <span id="login-name"></span></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="canvas">
+				<img class="logo" src="../img/logo.png"/>
+				<div class="nav-item-left">Menú</div>
+				<div class="nav-item-left nav-inactive">Personas</div>
+				<div class="nav-item-right" onclick="location.href='logout.html';">Cerrar sesión</div>
+				<div class="nav-item-right" onclick="location.href='http://ppem.gob.gt';">Sitio principal</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="canvas" id="menu-canvas">
+			</div>
+		</div>
+		<div class="canvas-white">
+			<p><table class="table-display">
+						<tr><th>CUI:</th><td><input style="width:300px" type="text" id="inp-cui"/></td></th>
+						<tr><th>Estado:</th><td>
+							<select id="sel-status">
+								<option value="A">activo</option>
+								<option value="J">jubilado</option>
+								<option value="S">suspendido</option>
+								<option value="D">deceso</option>
+							</select>
+						</td></th>
+						<tr><th>Nombres:</th><td><input style="width:300px" type="text" id="inp-first"/></td></th>
+						<tr><th>Apellidos:</th><td><input style="width:300px" type="text" id="inp-last"/></td></th>
+						<tr><th>Fecha de nacimiento:</th><td><input style="width:300px" type="text" id="inp-born"/></td></th>
+						<tr><th>Sexo:</th><td><select id="sel-sex"><option value="F">femenino</option><option value="M">masculino</option></select></td></th>
+						<tr><th>NIT:</th><td><input style="width:300px" type="text" id="inp-nit"/></td></th>
+						<tr><th>Dirección:</th><td><textarea style="height:100px; width:300px" id="inp-address"></textarea></td></th>
+				</table></p>
+			<hr>
+			<div id="div-loading" class="centered"><img class="img-loader" src="../img/ajax-loader.gif"></div>
+			<div id="div-success"><p>La persona se ha creado con éxito.</p></div>
+			<div id="div-error" class="error"><p>La persona no se ha creado por las siguientes razones:</p></div>
+			<div id="div-buttons">
+				<p><span class="button" id="btn-create">Crear persona</span><span class="button" id="btn-back">Volver a personas</span></p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="canvas">
+					3ra. Calle 5-26 Zona 1, Guatemala<br><br>
+					PBX: (502) 2291-1700 <br>
+					FAX: (502) 2291-1797 <br><br>
+					informacion@ppem.gob.gt
+			</div>
+		</div>
+		<div class="footer2">
+			PPEM © 2018
+		</div>
+	</body>
+
+</html>

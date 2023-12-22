@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPEM - Planilla Electrónica En Línea</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/showRoster.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="canvas">
+				<div class="header-left">SISTEMA DE PLANILLAS ELECTRÓNICAS</div>
+				<div class="header-right">PPEM &minus; <span id="login-name"></span></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="canvas">
+				<img class="logo" src="../img/logo.png"/>
+				<div class="nav-item-left">Menú</div>
+				<div class="nav-item-left nav-inactive">Planillas</div>
+				<div class="nav-item-right" onclick="location.href='logout.html';">Cerrar sesión</div>
+				<div class="nav-item-right" onclick="location.href='http://ppem.gob.gt';">Sitio principal</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="canvas" id="menu-canvas">
+			</div>
+		</div>
+		<div class="canvas-white" id="canvas1">
+			<h1>Planilla <span id="span-id"></span></h1>
+			<p>
+				<table class="table-display">
+					<tr><th>Entidad:</th><td id="td-entity"></td></tr>
+					<tr><th>Mes:</th><td id="td-month"></td></tr>
+					<tr><th>Año:</th><td id="td-year"></td></tr>
+					<tr><th>Cargada:</th><td id="td-uploaded"></td></tr>
+					<tr id="tr-status"></tr>
+				</table>
+			</p>
+			<p><span class="button" id="btn-ocsv">Ver original</span><span class="button" id="btn-csv">Ver CSV</span><span class="button" id="btn-pdf">Ver PDF</span></p>
+			<hr>
+			<h2>Cuota patronal</h2>
+			<p>
+				<table class="table-display" id="table-patron">
+				</table>
+				<div id="div-payorder-p"><p><span class="button" id="btn-payorder-p">Ver orden de pago</span></p></div>
+				<div id="div-receipt-p"><p><span class="button" id="btn-receipt-p">Ver recibo</span></p></div>
+			</p>
+			<hr>
+			<h2>Cuota laboral</h2>
+			<p>
+				<table class="table-display" id="table-worker">
+				</table>
+				<div id="div-payorder-l"><p><span class="button" id="btn-payorder-l">Ver orden de pago</span></p></div>
+				<div id="div-receipt-l"><p><span class="button" id="btn-receipt-l">Ver recibo</span></p></div>
+			</p>
+			<div id="btns-tsr-only">
+				<hr>
+				<p><span class="button" id="btn-accept-roster">Aceptar planilla</span> <span class="button" id="btn-reject-roster">Rechazar planilla</span> <span class="button" id="btn-revoke-rejection">Revocar rechazo</span></p>
+			</div>
+			<hr>
+			<p><span class="button" id="btn-back">Volver a vista anterior</span></p>
+		</div>
+		<div class="canvas-white" id="canvas2">
+			<div id="div-canvas2"></div>
+			<p><span class="button" id="btn-ok">OK</span></p>
+		</div>
+		<div class="footer">
+			<div class="canvas">
+					3ra. Calle 5-26 Zona 1, Guatemala<br><br>
+					PBX: (502) 2291-1700 <br>
+					FAX: (502) 2291-1797 <br><br>
+					informacion@ppem.gob.gt
+			</div>
+		</div>
+		<div class="footer2">
+			PPEM © 2018
+		</div>
+	</body>
+
+</html>
